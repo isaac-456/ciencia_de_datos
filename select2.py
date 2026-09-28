@@ -4,7 +4,7 @@ st.title("Titanic Dataset")
 
 data =pd.read_csv("https://raw.githubusercontent.com/adsoftsito/ciencia-datos/refs/heads/main/titanic.csv")
 st.dataframe(data)
-selected_sex = st.selectbox("Select Sex", data['sex'].unique())
-filtered_data_sex = data[data['sex']==selected_sex]
+selected_embarked = st.selectbox("Select Embarked", data['embarked'].unique())
+filtered_data_embarked = data[data['embarked']==selected_embarked]
 
-st.dataframe(filtered_data_sex)
+st.dataframe(filtered_data_embarked)
